@@ -127,6 +127,30 @@ function ThemeColor({ resumeInfo }) {
       name: "Gradient Accent",
       category: "creative",
       previewUrl: "https://res.cloudinary.com/dja7l3iq8/image/upload/v1743527045/biu6siaj8smice1ijjnn.png" 
+    },
+    {
+      id: "bold-impact",
+      name: "Bold Impact",
+      category: "modern",
+      previewUrl: "https://res.cloudinary.com/dja7l3iq8/image/upload/v1743697056/q1bi1rcgmy2phbjyxyz2.png" 
+    },
+    {
+      id: "split-frame",
+      name: "Split Frame",
+      category: "creative",
+      previewUrl: "https://res.cloudinary.com/dja7l3iq8/image/upload/v1743697141/npgbqssxd07j13tvopyj.png" 
+    },
+    {
+      id: "minimalist-pro",
+      name: "Minimalist Pro",
+      category: "professional",
+      previewUrl: "https://res.cloudinary.com/dja7l3iq8/image/upload/v1743962988/adaq8djiqcuiuka16ayt.png" // Replace with actual preview URL
+    },
+    {
+      id: "digital-card",
+      name: "Digital Card",
+      category: "modern",
+      previewUrl: "https://res.cloudinary.com/dja7l3iq8/image/upload/v1743963208/roye2ja2wmcsatv4rlcm.png" // Replace with actual preview URL
     }
   ];
 
@@ -269,7 +293,7 @@ function ThemeColor({ resumeInfo }) {
               ) : (
                 <Layout className="h-4 w-4" style={{ color: selectedColor }} />
               )}
-              <span className="hidden sm:inline font-medium">Theme</span>
+              <span className="hidden sm:inline font-medium">Templates</span>
               <div 
                 className="h-3 w-3 rounded-full ml-1 ring-2 ring-white shadow-sm"
                 style={{ backgroundColor: selectedColor }}

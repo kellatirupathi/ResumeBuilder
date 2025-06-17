@@ -39,12 +39,11 @@ function ExperiencePreview({ resumeInfo }) {
             {experience?.state}
             <span>
               {experience?.startDate}{" "}
-              {experience?.startDate && experience?.currentlyWorking
-                ? "Present"
-                : experience.endDate
-                ? "To"
-                : null}{" "}
-              {experience?.currentlyWorking ? "Present" : experience.endDate}{" "}
+              {experience?.startDate && (
+                <>
+                  {experience?.currentlyWorking ? "- Present" : experience?.endDate ? `- ${experience.endDate}` : ""}
+                </>
+              )}
             </span>
           </h2>
           <div
