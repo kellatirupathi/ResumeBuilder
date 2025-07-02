@@ -19,7 +19,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/api/users", userRouter);
-app.use("/api/resumes", resumeRouter);
+app.use("/users", userRouter);
+app.use("/resumes", resumeRouter);
 
 export default app;
